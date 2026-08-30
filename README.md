@@ -32,7 +32,9 @@ https://f4se.silverlock.org/
 
 ### Vortex
 
-The DLL can also be installed as an override after the official XDI mod.
+The DLL can also be installed as an override after the official XDI mod. 
+
+After replacing xdi.dll file, purge then deploy mods. You should recieve a notification in Vortex that there are two versions of xdi.dll. Use the newest file.
 
 If Vortex reports a file conflict, configure this compatibility build to load **after XDI** so that its `XDI.dll` wins the conflict.
 
