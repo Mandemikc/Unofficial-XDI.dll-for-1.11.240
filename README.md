@@ -24,9 +24,11 @@ https://f4se.silverlock.org/
 3. Download the replacement `XDI.dll` from this repository's Releases page.
 4. Replace:
 
-   `Fallout 4\Data\F4SE\Plugins\XDI.dll`
+   `fallout4\Extended Dialogue Interface 1.11.221-27216-1-11-221-1780909377\F4SE\Plugins`
+   
+   (or the folder your EDI mod is installed to.)
 
-   with the supplied version.
+   with this supplied version.
 
 ### Vortex
 
