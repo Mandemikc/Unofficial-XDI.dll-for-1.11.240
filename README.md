@@ -18,6 +18,19 @@ Official F4SE:
 
 https://f4se.silverlock.org/
 
+## Download
+
+The replacement `XDI.dll` is available from the **Releases** section on the right-hand side of this GitHub repository.
+
+1. Click **Releases** on the right side of the repository page.
+2. Open the latest release.
+3. Download the attached `XDI.dll`.
+4. Follow the installation instructions below.
+
+Direct link to the latest release:
+
+https://github.com/Mandemikc/Unofficial-XDI.dll-for-1.11.240/releases/latest
+
 ## Installation
 
 ### Vortex
