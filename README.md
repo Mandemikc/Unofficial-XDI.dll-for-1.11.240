@@ -1,88 +1,145 @@
-# XDI.dll-for-1.11.240
-Extended Dialogue Interface XDI.dll file for the updated Fallout 4 version 1.11.240
+# XDI.dll for Fallout 4 1.11.240
 
-# Extended Dialogue Interface - Fallout 4 1.11.240 Compatibility Build
+Unofficial compatibility DLL for **Extended Dialogue Interface (XDI)** on **Fallout 4 runtime 1.11.240**.
 
-This project provides a compatibility build of **Extended Dialogue Interface (XDI)** for **Fallout 4 runtime 1.11.240**.
+This project updates the official XDI 1.11.221 DLL for compatibility with Fallout 4 1.11.240 and F4SE 0.7.9.
 
 ## Requirements
 
-* Fallout 4 runtime **1.11.240**
-* Fallout 4 Script Extender (F4SE) **0.7.9**
-* The official **Extended Dialogue Interface (XDI)** mod installed
+- Fallout 4 runtime **1.11.240**
+- Fallout 4 Script Extender (F4SE) **0.7.9**
+- The official **Extended Dialogue Interface (XDI)** mod installed
 
 Official XDI:
+
 https://www.nexusmods.com/fallout4/mods/27216
 
 Official F4SE:
+
 https://f4se.silverlock.org/
 
 ## Installation
 
-1. Install Extended Dialogue Interface normally.
-2. Install the appropriate F4SE version for Fallout 4 1.11.240.
-3. Download the replacement `XDI.dll` from this repository's Releases page.
-4. Replace:
-
-   `fallout4\Extended Dialogue Interface 1.11.221-27216-1-11-221-1780909377\F4SE\Plugins`
-   
-   (or the folder your EDI mod is installed to.)
-
-   with this supplied version.
-
 ### Vortex
 
-The DLL can also be installed as an override after the official XDI mod. 
+1. Install the official Extended Dialogue Interface normally through Vortex.
+2. Open the installed XDI mod folder.
+3. Navigate to:
 
-After replacing xdi.dll file, purge then deploy mods. You should recieve a notification in Vortex that there are two versions of xdi.dll. Use the newest file.
+   `F4SE\Plugins\`
 
-If Vortex reports a file conflict, configure this compatibility build to load **after XDI** so that its `XDI.dll` wins the conflict.
+4. Back up the existing:
+
+   `XDI.dll`
+
+5. Replace it with the `XDI.dll` supplied here.
+6. In Vortex, **Purge Mods**, then **Deploy Mods**.
+7. If Vortex detects two versions of `XDI.dll`, select the **newer replacement file** so that it wins the conflict.
+8. Launch Fallout 4 through F4SE.
+
+Depending on your Vortex staging configuration, the original DLL may be located somewhere similar to:
+
+`...\Extended Dialogue Interface...\F4SE\Plugins\XDI.dll`
+
+The exact staging-folder name will vary between installations.
+
+### Alternative: Vortex Override Mod
+
+The replacement DLL can also be installed as a separate Vortex mod using this folder structure:
+
+`F4SE\Plugins\XDI.dll`
+
+Configure the compatibility mod to load **after the official XDI mod**, allowing this version of `XDI.dll` to win the conflict.
+
+This method leaves the original XDI installation untouched and is easier to reverse.
 
 ## Compatibility
 
-Target game runtime:
+**Target Fallout 4 runtime:**
 
 `Fallout4.exe 1.11.240.0`
 
-Target F4SE:
+**Target F4SE:**
 
 `F4SE 0.7.9`
 
-The DLL was derived from the official XDI build for Fallout 4 1.11.221 and updated for the engine-address changes introduced with Fallout 4 1.11.240.
+**Source XDI build:**
+
+`Fallout 4 1.11.221`
+
+This DLL was derived from the official XDI build for Fallout 4 1.11.221 and updated for the engine-address changes introduced with Fallout 4 1.11.240.
+
+### Verified DLL
+
+SHA-256:
+
+`bc513de06bfe9390872e5af250716a8e92f3523df6c4828043d795f102036d77`
+
+This hash identifies the exact DLL that was tested.
 
 ## Testing
 
-The compatibility build has been tested with:
+The compatibility build has been tested successfully with:
 
-* normal dialogue
-* dialogue with more than four response choices
-* question and exit indicators
-* unvoiced dialogue
-* repeated conversations
-* save/reload cycles
-* interior and exterior cell transitions
-* fast travel
-* mod-added dialogue
+- normal dialogue
+- dialogue containing more than four response choices
+- question and exit indicators
+- unvoiced dialogue
+- repeated conversations
+- companion dialogue
+- save and reload cycles
+- interior and exterior cell transitions
+- fast travel
+- mod-added dialogue
+- extended gameplay sessions
 
-No XDI-related errors or crashes were observed during initial testing.
+No XDI-related crashes or dialogue failures were observed during testing.
 
 ## Important
 
-This is an unofficial compatibility update.
+This is an **unofficial compatibility update**.
 
-Extended Dialogue Interface was created by **registrator2000 / reg2k**. This project is not affiliated with or endorsed by the original author or Bethesda Game Studios.
+It is intended specifically for:
 
-Please continue to endorse and support the original XDI project:
+- Fallout 4 **1.11.240**
+- F4SE **0.7.9**
+
+Do not use this DLL with another Fallout 4 runtime unless compatibility has been confirmed.
+
+The official Extended Dialogue Interface mod is still required. This project does not replace the rest of the XDI installation.
+
+This project is not affiliated with or endorsed by Bethesda Game Studios or the official XDI development team.
+
+If a current XDI rights-holder or maintainer requests removal of the redistributed DLL, the binary will be removed.
+
+Please continue to download, endorse and support the official XDI project:
 
 https://www.nexusmods.com/fallout4/mods/27216
 
 ## Credits
 
-Extended Dialogue Interface:
-registrator2000 / reg2k
+### Extended Dialogue Interface
 
-F4SE:
-ianpatt and the F4SE team
+**registrator2000 / reg2k**  
+Original XDI developer
 
-Fallout 4:
-Bethesda Game Studios
+**Neanka**  
+Current XDI maintainer/developer
+
+### Fallout 4 Script Extender
+
+**ianpatt and the F4SE team**
+
+https://f4se.silverlock.org/
+
+### Fallout 4
+
+**Bethesda Game Studios**
+
+## Disclaimer
+
+Use at your own risk.
+
+Although this build has undergone functional testing, Fallout 4 installations vary considerably because of differences in mod lists, load orders, F4SE plugins and game configuration.
+
+Back up your existing `XDI.dll` and important save files before installing.
