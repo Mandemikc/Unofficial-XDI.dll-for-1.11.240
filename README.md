@@ -1,3 +1,15 @@
+PROJECT RETIRED
+
+This unofficial XDI 1.11.240 compatibility build is now retired.
+
+An official XDI release supporting Fallout 4 runtime 1.11.240 is now available. Users should migrate to the official release.
+
+Following release of the official version, I compared the two binaries and identified one incorrect relocation/address in this unofficial build. Although this build worked successfully during testing and for users who tested it, the official release contains the corrected address.
+
+This repository is being preserved for historical and development-reference purposes only. Do not use this DLL when the official 1.11.240 XDI release is available.
+
+Thank you to everyone who used and tested the unofficial build and provided feedback.
+
 # XDI.dll for Fallout 4 1.11.240
 
 Unofficial compatibility DLL for **Extended Dialogue Interface (XDI)** on **Fallout 4 runtime 1.11.240**.
